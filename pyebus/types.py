@@ -416,7 +416,7 @@ class IntType(Type):
 
     def with_divider(self, divider):
         """Return copy and apply `divider`."""
-        divider = _try_int(divider * (self.divider or 1))
+        divider = _try_int(divider / (self.divider or 1))
         min_ = _try_int(self.min_ / divider)
         max_ = _try_int(self.max_ / divider)
         return IntType(min_, max_, divider=divider)
