@@ -2607,11 +2607,11 @@ MsgDef('mc.4', 'CoolingRequest', read=True)
 
 r,mc.4,CoolingStartOffset,,s,D1C,2,,
 MsgDef('mc.4', 'CoolingStartOffset', read=True)
-    FieldDef(0, '', IntType(0, 25, divider=4))
+    FieldDef(0, '', IntType(0, 100, divider=1))
 
 w,mc.4,CoolingStartOffset,,m,D1C,2,,
 MsgDef('mc.4', 'CoolingStartOffset', write=True)
-    FieldDef(0, '', IntType(0, 25, divider=4))
+    FieldDef(0, '', IntType(0, 100, divider=1))
 
 r,mc.4,CoolingSupported,yesno,s,UCH,0=no;1=yes,,
 MsgDef('mc.4', 'CoolingSupported', read=True)
@@ -2787,11 +2787,11 @@ MsgDef('mc.4', 'DWMOffToHeatingDelay', read=True)
 
 r,mc.4,EfficiencyHysteresisMin,,s,D1C,2,,
 MsgDef('mc.4', 'EfficiencyHysteresisMin', read=True)
-    FieldDef(0, '', IntType(0, 25, divider=4))
+    FieldDef(0, '', IntType(0, 100, divider=1))
 
 w,mc.4,EfficiencyHysteresisMin,,m,D1C,2,,
 MsgDef('mc.4', 'EfficiencyHysteresisMin', write=True)
-    FieldDef(0, '', IntType(0, 25, divider=4))
+    FieldDef(0, '', IntType(0, 100, divider=1))
 
 r,mc.4,errorhistory,index,m,UCH,,,,status,s,UCH,,,Status,time2,s,VTM,,,Zeit,date,s,HDA,,,Datum,error,s,UIN,,,Fehlernummer
 MsgDef('mc.4', 'errorhistory', read=True)
@@ -3093,7 +3093,7 @@ MsgDef('mc.4', 'TempDesiredLow', write=True)
 
 r,mc.4,TempDiffInOutdoor,,s,D1C,2,,
 MsgDef('mc.4', 'TempDiffInOutdoor', read=True)
-    FieldDef(0, '', IntType(0, 25, divider=4))
+    FieldDef(0, '', IntType(0, 100, divider=1))
 
 r,mc.4,Timer.Friday,from,s,TTM,,,Slots 1-3,to,s,TTM,,,bis,from,s,TTM,,,Slot 2 von/bis,to,s,TTM,,,bis,from,s,TTM,,,Slot 3 von/bis,to,s,TTM,,,bis,daysel,s,UCH,0=selected;1=Mo-Fr;2=Sa-So;3=Mo-So,,Tage
 MsgDef('mc.4', 'Timer.Friday', read=True)
@@ -3273,11 +3273,11 @@ MsgDef('mc.5', 'CoolingRequest', read=True)
 
 r,mc.5,CoolingStartOffset,,s,D1C,2,,
 MsgDef('mc.5', 'CoolingStartOffset', read=True)
-    FieldDef(0, '', IntType(0, 25, divider=4))
+    FieldDef(0, '', IntType(0, 100, divider=1))
 
 w,mc.5,CoolingStartOffset,,m,D1C,2,,
 MsgDef('mc.5', 'CoolingStartOffset', write=True)
-    FieldDef(0, '', IntType(0, 25, divider=4))
+    FieldDef(0, '', IntType(0, 100, divider=1))
 
 r,mc.5,CoolingSupported,yesno,s,UCH,0=no;1=yes,,
 MsgDef('mc.5', 'CoolingSupported', read=True)
@@ -3453,7 +3453,7 @@ MsgDef('mc.5', 'DWMOffToHeatingDelay', read=True)
 
 r,mc.5,EfficiencyHysteresisMin,,s,D1C,2,,
 MsgDef('mc.5', 'EfficiencyHysteresisMin', read=True)
-    FieldDef(0, '', IntType(0, 25, divider=4))
+    FieldDef(0, '', IntType(0, 100, divider=1))
 
 r,mc.5,errorhistory,index,m,UCH,,,,status,s,UCH,,,Status,time2,s,VTM,,,Zeit,date,s,HDA,,,Datum,error,s,UIN,,,Fehlernummer
 MsgDef('mc.5', 'errorhistory', read=True)
@@ -3747,7 +3747,7 @@ MsgDef('mc.5', 'TempDesiredLow', write=True)
 
 r,mc.5,TempDiffInOutdoor,,s,D1C,2,,
 MsgDef('mc.5', 'TempDiffInOutdoor', read=True)
-    FieldDef(0, '', IntType(0, 25, divider=4))
+    FieldDef(0, '', IntType(0, 100, divider=1))
 
 r,mc.5,Timer.Friday,from,s,TTM,,,Slots 1-3,to,s,TTM,,,bis,from,s,TTM,,,Slot 2 von/bis,to,s,TTM,,,bis,from,s,TTM,,,Slot 3 von/bis,to,s,TTM,,,bis,daysel,s,UCH,0=selected;1=Mo-Fr;2=Sa-So;3=Mo-So,,Tage
 MsgDef('mc.5', 'Timer.Friday', read=True)
